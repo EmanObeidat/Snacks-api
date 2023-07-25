@@ -7,6 +7,6 @@ class SnackDetailsView(RetrieveAPIView):
         queryset = Snack.objects.all()
         serializer_class = SnackSerializer
 
-class SnackListView(ListCreateAPIView):
+class SnackListView(RetrieveUpdateAPIView):
         queryset = Snack.objects.all()
         serializer_class = SnackSerializer
